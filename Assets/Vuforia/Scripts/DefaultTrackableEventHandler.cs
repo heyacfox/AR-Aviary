@@ -24,6 +24,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     private GameObject trackedGround;
     public string birdType;
     public MyStrEvent spawnBirdCall;
+    public AudioClip groundCreatedClip;
 
     #region PROTECTED_MEMBER_VARIABLES
 
@@ -124,7 +125,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     */
     private void groundFound()
     {
-        this.transform.GetChild(0).gameObject.SetActive(true);
+        if (this.transform.GetChild(0).gameObject.activeSelf == false)
+        {
+            this.transform.GetChild(0).gameObject.SetActive(true);
+            this.GetComponent<AudioSource>().PlayOneShot(groundCreatedClip);
+        }
+        
     }
 
     private void birdFound()
