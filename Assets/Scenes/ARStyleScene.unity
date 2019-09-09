@@ -1570,10 +1570,10 @@ GameObject:
   m_Component:
   - component: {fileID: 151978563}
   - component: {fileID: 151978562}
-  - component: {fileID: 151978561}
   - component: {fileID: 151978560}
   - component: {fileID: 151978559}
   - component: {fileID: 151978558}
+  - component: {fileID: 151978561}
   m_Layer: 0
   m_Name: ImageTarget-Cardinal
   m_TagString: Untagged
@@ -1648,15 +1648,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 151978557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c788eb2ed4cf1547b0347a4dc305300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetType: 0
+  birdType: 
+  spawnBirdCall:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MyStrEvent, VuforiaScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  groundCreatedClip: {fileID: 0}
   targetType: 1
   birdType: lb_cardinal
   spawnBirdCall:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: MyStrEvent, VuforiaScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_TypeName: MyStrEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   groundCreatedClip: {fileID: 0}
 --- !u!114 &151978562
 MonoBehaviour:
@@ -5709,10 +5716,10 @@ GameObject:
   m_Component:
   - component: {fileID: 595770254}
   - component: {fileID: 595770253}
-  - component: {fileID: 595770252}
   - component: {fileID: 595770251}
   - component: {fileID: 595770250}
   - component: {fileID: 595770249}
+  - component: {fileID: 595770252}
   m_Layer: 0
   m_Name: ImageTarget-bluejay
   m_TagString: Untagged
@@ -5787,15 +5794,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 595770248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c788eb2ed4cf1547b0347a4dc305300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetType: 1
-  birdType: lb_blueJay
+  targetType: 0
+  birdType: 
   spawnBirdCall:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: MyStrEvent, VuforiaScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  groundCreatedClip: {fileID: 0}
+  targetType: 0
+  birdType: lb_blueJay
+  spawnBirdCall:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MyStrEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   groundCreatedClip: {fileID: 0}
 --- !u!114 &595770253
 MonoBehaviour:

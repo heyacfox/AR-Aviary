@@ -7,7 +7,7 @@ public class lb_BirdSpawner : MonoBehaviour
 {
     public static lb_BirdSpawner instance;
     public lb_BirdController controller;
-    public List<DefaultTrackableEventHandler> watchForBirdSpawns;
+    public List<DefaultTrackableEventHandlerBirds> watchForBirdSpawns;
     public bool okayToSpawnBird = true;
     public AudioClip createBirdSound;
     
@@ -19,7 +19,7 @@ public class lb_BirdSpawner : MonoBehaviour
         {
             instance = this;
         }
-        foreach(DefaultTrackableEventHandler dteh in watchForBirdSpawns)
+        foreach(DefaultTrackableEventHandlerBirds dteh in watchForBirdSpawns)
         {
             dteh.spawnBirdCall.AddListener((string birdToSpawn) => SpawnBird(birdToSpawn));
         }
