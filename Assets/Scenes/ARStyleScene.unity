@@ -8660,7 +8660,7 @@ MonoBehaviour:
     ground.
 
 
-    Created by Nathan Hahn, George Mason GAME658.
+    Created by Nathan Hahn, for George Mason GAME658, in 2019.
 
 
     Uses the "Living Birds" asset pack by Dinopunch.'
@@ -17870,8 +17870,8 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 800, y: 450}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
