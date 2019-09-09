@@ -17,7 +17,7 @@ using UnityEngine.Events;
 /// Changes made to this file could be overwritten when upgrading the Vuforia version.
 /// When implementing custom event handler behavior, consider inheriting from this class instead.
 /// </summary>
-public class DefaultTrackableEventHandlerBirds : DefaultTrackableEventHandler
+public class DefaultTrackableEventHandlerBirds : DefaultTrackableEventHandler, ITrackableEventHandler
 {
 
     public TargetType targetType;
@@ -36,7 +36,7 @@ public class DefaultTrackableEventHandlerBirds : DefaultTrackableEventHandler
 
     #region UNITY_MONOBEHAVIOUR_METHODS
 
-    protected virtual void Start()
+    protected override void Start()
     {
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
@@ -47,7 +47,7 @@ public class DefaultTrackableEventHandlerBirds : DefaultTrackableEventHandler
         }
     }
 
-    protected virtual void OnDestroy()
+    protected override void OnDestroy()
     {
         if (mTrackableBehaviour)
             mTrackableBehaviour.UnregisterTrackableEventHandler(this);
@@ -61,7 +61,7 @@ public class DefaultTrackableEventHandlerBirds : DefaultTrackableEventHandler
     ///     Implementation of the ITrackableEventHandler function called when the
     ///     tracking state changes.
     /// </summary>
-    public void OnTrackableStateChanged(
+    new public void OnTrackableStateChanged(
         TrackableBehaviour.Status previousStatus,
         TrackableBehaviour.Status newStatus)
     {

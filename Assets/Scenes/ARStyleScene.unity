@@ -1651,13 +1651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c788eb2ed4cf1547b0347a4dc305300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetType: 0
-  birdType: 
-  spawnBirdCall:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: MyStrEvent, VuforiaScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  groundCreatedClip: {fileID: 0}
   targetType: 1
   birdType: lb_cardinal
   spawnBirdCall:
@@ -5797,14 +5790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c788eb2ed4cf1547b0347a4dc305300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetType: 0
-  birdType: 
-  spawnBirdCall:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: MyStrEvent, VuforiaScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  groundCreatedClip: {fileID: 0}
-  targetType: 0
+  targetType: 1
   birdType: lb_blueJay
   spawnBirdCall:
     m_PersistentCalls:
@@ -10693,11 +10679,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1080232859}
   - component: {fileID: 1080232858}
-  - component: {fileID: 1080232857}
   - component: {fileID: 1080232856}
   - component: {fileID: 1080232855}
   - component: {fileID: 1080232854}
   - component: {fileID: 1080232860}
+  - component: {fileID: 1080232857}
   m_Layer: 0
   m_Name: ImageTarget-Ground
   m_TagString: Untagged
@@ -10772,7 +10758,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1080232853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c788eb2ed4cf1547b0347a4dc305300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetType: 0
@@ -10780,7 +10766,7 @@ MonoBehaviour:
   spawnBirdCall:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: MyStrEvent, VuforiaScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_TypeName: MyStrEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   groundCreatedClip: {fileID: 8300000, guid: cdd2bf3db646249429213541df377729, type: 3}
 --- !u!114 &1080232858
 MonoBehaviour:
@@ -21422,13 +21408,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetType: 0
-  birdType: 
-  spawnBirdCall:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: MyStrEvent, VuforiaScripts, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  groundCreatedClip: {fileID: 0}
 --- !u!114 &2041725434
 MonoBehaviour:
   m_ObjectHideFlags: 0
